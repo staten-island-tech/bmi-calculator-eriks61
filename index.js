@@ -1,7 +1,15 @@
-let a = Number(prompt("Height in cm"));
-let b = Number(prompt("Weight in kg"));
-function mult(x,y){
-    return x/y*y;
+let a = Number(prompt("Weight in kg"));
+let b = Number(prompt("Height in m"));
+
+function Power() {
+  return b * b;
 }
-const sum = mult(a,b);
-console.log(sum)
+const prod = Power();
+console.log(a / prod);
+if (a / prod < 18.5) {
+  console.log("Underweight");
+} else if (18.5 < a / prod < 30) {
+  console.log("Healthy");
+} else {
+  console.log("Unhealthy");
+}
